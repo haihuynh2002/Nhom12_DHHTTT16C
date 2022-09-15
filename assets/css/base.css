@@ -1,0 +1,23 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 1. Position */
+    /* 2. Display */
+    /* 3. Color */
+    /* 4. Text */
+    /* 5. Others */
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+    line-height: 1.4rem;
+    box-sizing: border-box;
+}
+
