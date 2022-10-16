@@ -23,14 +23,14 @@ items.forEach(function(item) {
 })
 
 buyNowBtn.onclick = function() {
-    modelBlock.style.opacity = '1';
-    modelBlock.style.display = 'flex';
+    modelBlock.classList.add('open');
+    modelContent.classList.add('open-content');
 
 }
 
 readMoreBtn.onclick = function() {
-    modelBlock.style.opacity = '1';
-    modelBlock.style.display = 'flex';
+    modelBlock.classList.add('open');
+    modelContent.classList.add('open-content');
 
 }
 
