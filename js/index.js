@@ -11,6 +11,12 @@ const modelImg = $('.body__img');
 const modelTitle = $('.text__title');
 const modelDesc = $('.text__desc');
 const menuItems = $$('.header__menu-item');
+const cartBtn = $('.cart');
+const cartModel = $('.cart-model');
+const menuBtn = $('.menu-icon');
+const moblie = $('.moblie');
+const closeMenu = $('.menu-close');
+const menuList = $('.moblie-menu');
 
 
 items.forEach(function(item) {
@@ -46,4 +52,27 @@ modelBlock.onclick = function() {
 
 modelContent.onclick = function(e) {
     e.stopPropagation();
+}
+
+cartBtn.onclick = function() {
+    console.log(1)
+    cartModel.classList.add('open');
+    modelContent.classList.add('open-content');
+}
+
+menuBtn.onclick = function() {
+    moblie.classList.add('active');
+}
+
+closeMenu.onclick = function() {
+    moblie.classList.remove('active')
+}
+
+console.log(menuList)
+
+for(var i = 0; i < menuList.children.length; i++) {
+    menuList.children[i].onclick = function() {
+        console.log(1)
+        moblie.classList.remove('active');
+    }
 }

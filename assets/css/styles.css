@@ -17,9 +17,11 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     z-index: 1;
+    box-shadow: 0 0 5px #ccc;
 }
 
 .header .container {
+    height: 100%;
     padding: 0 2rem;
 }
 
@@ -47,7 +49,7 @@ a {
 
 .container {
     max-width: 1089px;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     position: relative;
 
@@ -76,6 +78,7 @@ a {
     font-size: 3rem;
     font-weight: bold;
 
+    line-height: 1;
 }
 
 .header__menu {
@@ -92,6 +95,9 @@ a {
 
 }
 
+.menu-icon {
+    display: none;
+}
 
 .header__menu-icon {
     font-size: 1rem;
@@ -187,22 +193,30 @@ a {
 }
 
 
-
 .btn {
     outline: none;
     border: none;
 }
 
-.header__btn {
+.cart {
     padding: 1.6rem 2rem;
+    position: relative;
+}
+
+.cart-container {
+
+}
+
+.header__btn {
+    padding: 1.4rem 0rem;
     font-weight: 500;
-    margin-left: 4rem;
     border-radius: .5rem;
     background-color: var( --bs-blue);
     color: var(--bs-white);
     cursor: pointer;
 }
 
+.cart:hover,
 .header__btn:hover {
     background-color: rgb(32, 5, 155);
 }
@@ -407,7 +421,7 @@ a {
 }
 
 .hero {
-    height: 398px;
+    height: auto;
     margin: 12.8rem;
 }
 
@@ -451,22 +465,7 @@ a {
     background-size: contain;
 }
 
-.first__button {
-    font-weight: 500;
-    font-size: 1.6rem;
-    padding: 16px 20px;
-    background-color: var(--bs-blue);
-    border-radius: 5px;
-    color: var(--bs-white);
-    cursor: pointer;
-}
-
-.button-icon {
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    margin-left: 8px;
-}
-
+.first__button,
 .second__button {
     font-weight: 500;
     font-size: 1.6rem;
@@ -475,7 +474,17 @@ a {
     border-radius: 5px;
     color: var(--bs-white);
     cursor: pointer;
-    margin-left: 8px;
+    margin: 5px;
+}
+
+.header__btn .button-icon {
+    transform: translateY(-50%);
+    padding: 1.4rem 2rem;
+    font-size: 1.8rem;
+}
+
+.header__btn {
+    margin: 5px;
 }
 
 .demo {
@@ -625,7 +634,8 @@ a {
     color: var(--bs-gray)
 }
 
-.model {
+.model,
+.cart-model {
     position: fixed;
     top: 0;
     right: 0;
@@ -636,6 +646,7 @@ a {
     display: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     animation: modelFadeIn .3s linear;
 }
 
@@ -666,6 +677,7 @@ a {
     }
 }
 
+.cart-model__top,
 .content__top {
     height: 80px;
     line-height: 80px;
@@ -684,7 +696,7 @@ a {
 }
 
 .content__body {
-    height: 300px;
+    height: auto;
     display: flex;
     padding: 20px;
 
@@ -695,27 +707,115 @@ a {
     object-fit: contain;
 }
 
+@media (max-width: 940px) {
+    .menu-icon {
+        display: unset;
+    }
+
+    .hero-images,
+    .hero-text {
+        flex: 0 0 100%;
+    }
+
+    .hero {
+        margin: 2rem;
+    }
+
+    .hero .container{
+        padding-top: 50px;
+    }
+
+    .hero .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .demo {
+        padding: 5rem 1rem;
+    }
+
+    .hero-text {
+        padding: 20px;
+    }
+
+    .hero-text__buttons {
+        text-align: center;
+    }
+
+    .content__body {
+        flex-direction: column;
+    }
+
+    .body__img {
+        align-self: center;
+    }
+
+    .model__content {
+        width: 90%;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .item {
+        flex: 0 0 50%;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .moblie-menu {
+        padding: 10px;
+    }
+
+    .demo .row {
+        margin: 20px 0;
+    }
+
+    .user,
+    .cart {
+        display: none;
+    }
+
+    .demo {
+        padding: 0;
+    }
+
+    .item {
+        flex: 0 0 100%;
+        padding: 1rem;
+    }
+}
+
 .text__title {
     margin: 20px 0;
     line-height: 1.5;
 }
 
-#pay {
+.pay, .add-cart {
     border: none;
     padding: 8px 16px;
     background-color: var(--bs-blue);
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: auto;
-    margin-left: auto;
     width: fit-content;
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
 }
 
 .body__text {
     flex: 1;
-    display: flex;
-    flex-direction: column;
     text-align: start;
     margin-left: 20px;
 }
@@ -791,4 +891,49 @@ textarea {
 
 textarea {
     height: 200px;
+}
+
+.moblie.active {
+    display: flex;
+    right: 0;
+
+}
+
+.moblie {
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+    width: 40vw;
+    height: 100vh;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    right: -42%;
+    z-index: 1;
+    transition: right .3s linear;
+    display: flex;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+.moblie-menu {
+    list-style: none;
+}
+
+.moblie-menu > li {
+    padding: 10px;
+}
+
+.menu-close-btn {
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.menu-close {
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: auto;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+    cursor: pointer;
+
 }

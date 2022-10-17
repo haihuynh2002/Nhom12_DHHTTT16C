@@ -17,6 +17,18 @@
     <div class="wrapper">
         <!-- =========HEADER========== -->  
         <header class="header">
+        <!--Moblie Menu-->
+        <div class="moblie ">
+            <ul class="moblie-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="/html/login.html">Account</a></li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="#genes">Genres</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="btn menu-close"><i class="menu-close-btn ti-close"></i></button>
+        </div>
             <div class="container">
                 <div class="row">
                     <a href="" class="header__logo">Camera Store</a>
@@ -64,7 +76,7 @@
                         </li>
                         <li class="header__menu-item">
                             <a class="header__menu-link" href="#genes">
-                                Genes
+                                Genres
                                 <i class="header__menu-icon ti-angle-right"></i>
                             </a>
                             <div class="header-submenu-2">
@@ -150,9 +162,25 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="btn header__btn">
-                        Account
-                        <i class="button-icon ti-arrow-right"></i>
+                    <button class="btn header__btn cart"><i class="button-icon ti-bag"></i></button>
+                    <div class="cart-model">
+                        <div class="cart-container">
+                            <ul class="cart-list">
+                                <li class="cart-list__item">
+                                    <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71BRQiusjbL._AC_SL1500_.jpg" alt="">
+                                    <h3>Panasonic LUMIX FZ1000 II 20.1MP</h3>
+                                    <p>300$</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="/html/login.html">
+                        <button class="btn header__btn user">
+                            <i class="button-icon ti-user"></i>
+                        </button>
+                    </a>
+                    <button class="btn header__btn menu-icon active">
+                        <i class="button-icon ti-menu"></i>
                     </button>
                 </div>
             </div>
@@ -406,7 +434,9 @@
                     <div class="body__text">
                         <h3 class="text__title">Panasonic LUMIX FZ1000 II 20.1MP</h3>
                         <div class="text__desc">Large sensor 1 inch 20. 1MP MOS sensor provides excellent low light and color depth performance, making it perfect for wildlife, sports, new or candid shots</div>
-                        <button id="pay">Pay</button>
+                        <div class="price">300$</div>
+                        <button class="btn pay">Add to cart</button>
+                        <button class="btn add-cart">Pay Now</button>
                     </div>
                 </div>
                 <div class="content__footer">
