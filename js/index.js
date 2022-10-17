@@ -17,6 +17,10 @@ const menuBtn = $('.menu-icon');
 const moblie = $('.moblie');
 const closeMenu = $('.menu-close');
 const menuList = $('.moblie-menu');
+const backToShop = $('.cart-return');
+const cartContainer = $('.cart-container');
+const addCart = $('.add-cart');
+const cartItem = $('.moblie-menu').children[3];
 
 
 items.forEach(function(item) {
@@ -27,12 +31,6 @@ items.forEach(function(item) {
     modelImg.src = item.children[1].currentSrc;
     }
 })
-
-buyNowBtn.onclick = function() {
-    modelBlock.classList.add('open');
-    modelContent.classList.add('open-content');
-
-}
 
 readMoreBtn.onclick = function() {
     modelBlock.classList.add('open');
@@ -54,12 +52,6 @@ modelContent.onclick = function(e) {
     e.stopPropagation();
 }
 
-cartBtn.onclick = function() {
-    console.log(1)
-    cartModel.classList.add('open');
-    modelContent.classList.add('open-content');
-}
-
 menuBtn.onclick = function() {
     moblie.classList.add('active');
 }
@@ -68,11 +60,46 @@ closeMenu.onclick = function() {
     moblie.classList.remove('active')
 }
 
-console.log(menuList)
-
 for(var i = 0; i < menuList.children.length; i++) {
     menuList.children[i].onclick = function() {
-        console.log(1)
         moblie.classList.remove('active');
     }
+}
+
+cartBtn.onclick = function() {
+    cartModel.classList.add('open');
+    cartContainer.classList.add('open-content');
+}
+
+backToShop.onclick = function() {
+    cartModel.classList.remove('open');
+    cartContainer.classList.remove('open-content');
+}
+
+cartModel.onclick = function() {
+    cartModel.classList.remove('open');
+    cartContainer.classList.remove('open-content');
+}
+
+cartContainer.onclick = function(e) {
+    e.stopPropagation();
+}
+
+buyNowBtn.onclick = function() {
+    cartModel.classList.add('open');
+    cartContainer.classList.add('open-content');
+
+}
+
+addCart.onclick = function() {
+    modelBlock.classList.remove('open');
+    modelContent.classList.remove('open-content');
+    cartModel.classList.add('open');
+    cartContainer.classList.add('open-content');
+}
+
+cartItem.onclick = function() {
+    cartModel.classList.add('open');
+    cartContainer.classList.add('open-content');
+    moblie.classList.remove('active');
 }

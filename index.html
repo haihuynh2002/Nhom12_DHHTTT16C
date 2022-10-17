@@ -23,6 +23,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="/html/login.html">Account</a></li>
                 <li><a href="#products">Product</a></li>
+                <li><a href="#">Cart</a></li>
                 <li><a href="#genes">Genres</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
@@ -111,7 +112,7 @@
                                 <div class="submenu-subtext__item-2">
                                     <div class="submenu-subtext__item-title">Shipping</div>
                                     <ul class="submenu-subtext__item-list">
-                                        <li class="submenu-subtext__item-item">VietName</li>
+                                        <li class="submenu-subtext__item-item">Vietnam</li>
                                         <li class="submenu-subtext__item-item">International</li>
                                         <li class="submenu-subtext__item-item">Southeast Asian</li>
                                     </ul>
@@ -165,13 +166,58 @@
                     <button class="btn header__btn cart"><i class="button-icon ti-bag"></i></button>
                     <div class="cart-model">
                         <div class="cart-container">
-                            <ul class="cart-list">
-                                <li class="cart-list__item">
-                                    <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71BRQiusjbL._AC_SL1500_.jpg" alt="">
-                                    <h3>Panasonic LUMIX FZ1000 II 20.1MP</h3>
-                                    <p>300$</p>
-                                </li>
-                            </ul>
+                            <div class="cart-block">
+                                <div class="cart-return">
+                                    <i class="return-icon ti-arrow-left"></i>
+                                    <span>Continue Shopping</span>
+                                </div>
+                                <ul class="cart-list">
+                                    <li class="cart-list__item">
+                                        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71BRQiusjbL._AC_SL1500_.jpg" alt="">
+                                        <h6>Panasonic LUMIX FZ1000 II 20.1MP</h6>
+                                        <p>300$</p>
+                                        <i class="delete-icon ti-trash"></i>
+                                    </li>
+                                    <li class="cart-list__item">
+                                        <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61Tywf7uJGL._AC_SL1000_.jpg" alt="">
+                                        <h6>Nikon Coolpix B500 Digital Camera (Black)</h6>
+                                        <p>300$</p>
+                                        <i class="delete-icon ti-trash"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card__detail">
+                                <h3 class="detail__title">Cart Details</h3>
+                                <div class="detail__type">
+                                <p>Card type</p>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/2560px-PayPal_logo.svg.png" alt="">
+                                </div>
+                                <div class="detail__input">
+                                    <input type="text" name="" id="name" placeholder="Cardhoder's Name">
+                                    <input type="text" name="" id="number" placeholder="Card Number">
+                                    <div class="detail__info">
+                                        <input type="text" name="" id="exper" placeholder="Experation">
+                                        <input type="text" name="" id="cvv" placeholder="CVV">
+                                    </div>
+                                </div>
+                                <div class="detail__total">
+                                    <div class="total__label">
+                                        <p>Subtotal</p>
+                                        <p>Shipping</p>
+                                        <p>Total(Incl. taxes)</p>
+                                    </div>
+                                    <div class="total__values">
+                                        <p>$300</p>
+                                        <p>$20</p>
+                                        <p>$320</p>
+                                    </div>
+                                </div>
+                                <div class="total__btn">
+                                    <span>$320</span>
+                                    <span>CHECKOUT <i class="total-icon ti-arrow-right"></i></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <a href="/html/login.html">
@@ -301,7 +347,7 @@
                                 <h4 class="item__heading">Shipping</h4>
                                 <ul class="item__list">
                                     <li class="item__list-item">
-                                        <a href="" class="item__list-link">VietName</a>
+                                        <a href="" class="item__list-link">VietNam</a>
                                         <i class="item__list-icon ti-plus"></i>
                                     </li>
                                     <li class="item__list-item">
@@ -436,7 +482,7 @@
                         <div class="text__desc">Large sensor 1 inch 20. 1MP MOS sensor provides excellent low light and color depth performance, making it perfect for wildlife, sports, new or candid shots</div>
                         <div class="price">300$</div>
                         <button class="btn pay">Add to cart</button>
-                        <button class="btn add-cart">Pay Now</button>
+                        <button class="btn add-cart">Buy Now</button>
                     </div>
                 </div>
                 <div class="content__footer">

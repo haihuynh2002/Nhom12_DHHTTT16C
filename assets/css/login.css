@@ -35,16 +35,37 @@ html {
 .form__body {
     max-width: 500px;
     margin: calc((100vh - 503px)/2) auto;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
     padding: 48px;
     display: flex;
     flex-direction: column;
     background-color: var(--white-color);
 }
 
-@media (max-width: 440px) {
-    .form__body {
-        width: 100%;
+.form__body-signup {
+    max-width: 50vw;
+    margin: 0 auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+}
+
+@media (max-width: 800px) {
+    .form__body-signup {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 460px) {
+    .form__body,
+    .form__body-signup {
+        box-shadow: unset;
+    }
+
+    .form__body-signup {
+        max-width: 100%;
     }
 }
 
@@ -111,4 +132,20 @@ html {
     text-decoration: none;
 }
 
+.signup {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 16px 0;
+    text-align: center;
+
+}
+
+.signup__label {
+
+}
+
+.signup__link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
 

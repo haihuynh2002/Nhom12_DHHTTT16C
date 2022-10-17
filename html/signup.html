@@ -1,57 +1,62 @@
-<title>Document</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/icon/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="text/html" href="../css/style.css">
+    <link rel="text/html" href="../css/icon/themify-icons/themify-icons.css">
+    <link rel="text/html" href="../css/base.css">
     <link rel="stylesheet" href="../assets/css/login.css">
+    <title>Login</title>
 </head>
 <body>
-    <div id="container">
-        <form action="" class="form">
-            <h2 class="form__heading">Camera Store</h2>
+    <div class="form__body-signup">
+        <h1 class="heading">Camera Store</h1>
 
-            <div class="form__body">
-                <div class="form__body__title">Sign in to your account</div>
+        <div class="form__body__title">Welcome to Camera Store</div>
 
-                <label for="form__body__email" class="form__body__label">Email</label>
+        <label for="form__body__email" class="form__body__label">Username</label>
 
-                <input type="email" id="form__body__email" class="form__body__input">
+        <input type="email" id="form__body__email" class="form__body__input">
 
-                <div class="form__password">
-                    <label for="form__body__password" class="form__body__label">Password</label>
+        <label for="form__body__email" class="form__body__label">Full name</label>
 
-                    <a href="" class="form__forget-password">Forgot your password?</a>
+        <input type="email" id="form__body__email" class="form__body__input">
 
-                </div>
+        <label for="form__body__email" class="form__body__label">Address</label>
 
-                <input type="email" id="form__body__password" class="form__body__input">
+        <input type="email" id="form__body__email" class="form__body__input">
 
-                <div class="form__checkbox">
-                    <input type="checkbox" name="checkbox" id="form__checkbox__input">
-                    <label for="form__checkbox__input" class="form__body__label">Stay signed in for a week</label>
-                </div>
-
-                <input type="submit" class="form__submit" value="Continue">
-
-                <a href="" class="form__google">Use single sign-on (Google) instead</a>
-            </div>
-        </form>
         
-        <footer>
-            <div class="signup">
-                <span class="signup__label">Don't have an account?</span>
-                <a href="" class="signup__link">Sign up</a>
-            </div>
+        <div class="form__password">
+            <label for="form__body__password" class="form__body__label">Password</label>
+            
+        </div>
+        
+        <input type="password" id="form__body__password" class="form__body__input">
 
-            <ul class="options">
-                <li class="option"><a href="" class="option__link">© Camera Store</a></li>
-                <li class="option"><a href="" class="option__link">Contact</a></li>
-                <li class="option"><a href="" class="option__link">Privacy & terms</a></li>
-            </ul>
-        </footer>
-    </div>  
+        <label for="form__body__email" class="form__body__label">Retyping password</label>
+
+        <input type="password" id="form__body__email" class="form__body__input">
+        
+        <div class="form__checkbox">
+            <input type="checkbox" name="checkbox" id="form__checkbox__input">
+            <label for="form__checkbox__input" class="form__body__label">By checked this box, you content with our policy.</label>
+        </div>
+
+        <input type="submit" class="form__submit" value="Continue">
+
+        <div class="signup">
+            <span class="signup__label">Already have an account?</span>
+            <a href="../html/login.html" class="signup__link">Log in</a>
+        </div>
+    </div>
+    </div>
+    <script src="../js/login.js"></script>
 </body>
 </html>

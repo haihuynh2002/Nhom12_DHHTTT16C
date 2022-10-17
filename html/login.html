@@ -1,12 +1,19 @@
-<title>Document</title>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/icon/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="text/html" href="../css/style.css">
+    <link rel="text/html" href="../css/icon/themify-icons/themify-icons.css">
+    <link rel="text/html" href="../css/base.css">
     <link rel="stylesheet" href="../assets/css/login.css">
+    <title>Login</title>
 </head>
 <body>
     <div class="form__body">
@@ -25,7 +32,7 @@
 
         </div>
 
-        <input type="email" id="form__body__password" class="form__body__input">
+        <input type="password" id="form__body__password" class="form__body__input">
 
         <div class="form__checkbox">
             <input type="checkbox" name="checkbox" id="form__checkbox__input">
@@ -34,8 +41,12 @@
 
         <input type="submit" class="form__submit" value="Continue">
 
-        <a href="" class="form__google">Use single sign-on (Google) instead</a>
+        <div class="signup">
+            <span class="signup__label">Don't have an account?</span>
+            <a href="../html/signup.html" class="signup__link">Sign up</a>
+        </div>
     </div>
-    </div>  
+    </div>
+    <script src="../js/login.js"></script>
 </body>
 </html>
