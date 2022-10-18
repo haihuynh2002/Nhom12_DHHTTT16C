@@ -11,30 +11,44 @@
     <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <style>
+        .sitemap {
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 96px;
+            font-size: 2rem;
+            max-width: 500px;
+            text-align: center;
+        }
+        
+        .item ul {
+            padding: 20px;
+        }
+
+        .item,
+        .item ul li {
+            background-color: aliceblue;
+            list-style: none;
+            border-left: 2px solid var(--bs-blue);
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+        }
+
+
+    </style>
     <title>Camera Store</title>
 </head>
 <body>
     <div class="wrapper">
         <!-- =========HEADER========== -->  
         <header class="header">
-        <!--Moblie Menu-->
-        <div class="moblie ">
-            <ul class="moblie-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="/login.html">Account</a></li>
-                <li><a href="#products">Product</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#genes">Genres</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-            <button class="btn menu-close"><i class="menu-close-btn ti-close"></i></button>
-        </div>
-            <div class="container">
+               <div class="container">
                 <div class="row">
-                    <a href="" class="header__logo">Camera Store</a>
+                    <a href="/index.html" class="header__logo">Camera Store</a>
                     <ul class="header__menu">
-                        <li class="header__menu-item"><a class="header__menu-link" href="#">Home</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="/index.html">Home</a></li>
                         <li class="header__menu-item">
                             <a class="header__menu-link" href="#products">
                                 Products
@@ -126,7 +140,7 @@
                             
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">
+                            <a class="header__menu-link" href="">
                                 Company
                                 <i class="header__menu-icon ti-angle-right"></i>
                             </a>
@@ -229,242 +243,22 @@
                 </div>
             </div>
         </header>
-        <!-- ========MAIN=========== -->
-        <div class="main">
-            <div class="hero">
-                <div class="container">
-                    <div class="row">
-                        <div class="hero-text">
-                            <h2 class="hero-text__title">
-                                Panasonic LUMIX FZ1000 II 20.1MP</h2>
-                            <p class="hero-text__desc">
-                                Large sensor 1 inch 20. 1MP MOS sensor provides excellent low light and color depth performance, making it perfect for wildlife, sports, new or candid shots.
-                            </p>
-                            <div class="hero-text__buttons">
-                                <button class="btn first__button">
-                                    Buy Now
-                                <i class="button-icon ti-arrow-right"></i>
-                                </button>
-                                <button class="btn second__button">Read More...</button>
-                            </div>
-                        </div>
-                        <div class="hero-images">
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- =========DEMO=========== -->
-            <div class="contrainer-fluid">
-                <div class="demo" id="products">               
-                <div class="container">
-                    <div class="row">
-                        <div class="demo__text">
-                            <div class="demo__text-label">Products</div>
-                            <h3 class="demo__text-title">Feature Products</h3>
-                            <div class="demo__text-desc">Those is the most popular products on this website.</div>
-                        </div>
-                    </div>
-                </div>
+        <!--===========MAIN===========-->
+        <ul class="sitemap">
+            <li class="item">
+                Home
+                <ul>
+                    <li>#products</li>
+                    <li>#genres</li>
+                    <li>#about</li>
+                    <li>#contact</li>
+                </ul>
+            </li>
+            <li class="item">Login</li>
+            <li class="item">Signup</li>
+        </ul>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="item">
-                            <h4 class="item__heading">Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens | Built-in Wi-Fi | 24.1 MP CMOS Sensor | DIGIC 4+ Image Processor and Full HD Videos</h4>
-                            <img class="item__image" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71EWRyqzw0L._AC_SL1500_.jpg" alt="demo images">
-                        </div>
-                        <div class="item">
-                            <h4 class="item__heading">Canon EOS Rebel T7 DSLR Camera|2 Lens Kit with EF18-55mm + EF 75-300mm Lens, Black</h4>
-                            <img class="item__image" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81u-uquDJXL._AC_SL1500_.jpg" alt="demo images">
-                        </div>
-                        <div class="item">
-                            <h4 class="item__heading">Panasonic LUMIX FZ300 Long Zoom Digital Camera Features 12.1 Megapixel, 1/2.3-Inch Sensor, 4K Video, WiFi, Splash & Dustproof Camera Body, LEICA DC 24X</h4>
-                            <img class="item__image" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81xVbbwlqlL._AC_SL1500_.jpg" alt="demo images">
-                        </div>
-                        <div class="item">
-                            <h4 class="item__heading">Nikon Coolpix B500 Digital Camera (Black)</h4>
-                            <img class="item__image" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/61Tywf7uJGL._AC_SL1000_.jpg" alt="demo images">
-                        </div>
-                        <div class="item">
-                            <h4 class="item__heading">Canon PowerShot SX420 Digital Camera w/ 42x Optical Zoom - Wi-Fi & NFC Enabled (Black)</h4>
-                            <img class="item__image" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/41a0leiV5DL._AC_.jpg" alt="demo images">
-                        </div>
-                        <div class="item">
-                            <h4 class="item__heading">Canon PowerShot SX540 HS Digital Camera w/ 50x Optical Zoom - Wi-Fi & NFC Enabled (Black), 1 - 1067C001</h4>
-                            <img class="item__image" src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/51dUmz1o7iS._AC_SL1500_.jpg" alt="demo images">
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <!-- ========PAGES=========== -->
-            <div class="demo" id="genes">               
-                <div class="container">
-                    <div class="row products">
-                        <div class="demo__text">
-                            <div class="demo__text-label">Classicfied</div>
-                            <h3 class="demo__text-title">Variety Of Cameras</h3>
-                            <div class="demo__text-desc">You can choose your favorite products from a huge of camera storage with veriety of brand, size, color, price, ect...</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="pages-item">
-                                <h4 class="item__heading">Brand</h4>
-                                <ul class="item__list">
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Cannon</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Sonny</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">LG</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Lumix</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Panasonic</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">More...</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pages-item">
-                                <h4 class="item__heading">Shipping</h4>
-                                <ul class="item__list">
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">VietNam</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">International</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="pages-item">
-                                <h4 class="item__heading">Color</h4>
-                                <ul class="item__list">
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Black</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">White</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Brown</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Red</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Blue</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pages-item">
-                                <h4 class="item__heading">Fee</h4>
-                                <ul class="item__list">
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Free of Charge</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Free Shipping</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="pages-item">
-                                <h4 class="item__heading">Price</h4>
-                                <ul class="item__list">
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Low</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">Average</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">High</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="pages-item">
-                                <h4 class="item__heading">Video Capture Resolution</h4>
-                                <ul class="item__list">
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">2160p</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">1089p</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">720p</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                    <li class="item__list-item">
-                                        <a href="" class="item__list-link">568p</a>
-                                        <i class="item__list-icon ti-plus"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-
-            <div id="about" class="contrainer-fluid about">
-                <div class="demo">
-                    <h3 class="demo__text-title">About Us</h3>
-                    <p class="demo__text-desc">If you want something with a little flavor, the Touraza template is a tasteful choice. With the "meet the team" section near the top, geometric designs, and striking typography, you'll be able to showcase the humans behind your brand.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="demo" id="contact">               
-            <div class="container">
-                <div class="row products">
-                    <div class="demo__text">
-                        <div class="demo__text-label">Contact Us</div>
-                        <h3 class="demo__text-title">Get in touch width us</h3>
-                        <p class="demo__text-desc">Feel free to contact with us. We will try our best to help you.</p>
-                        <form action="">
-                            <input type="text" name="name" id="email" placeholder="Your name">
-                            <input type="email" name="email" id="email" placeholder="Your email address">
-                            <textarea placeholder="Your message:..."></textarea>
-                            <input type="submit" value="Send">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        
         <div class="model">
             <div class="model__content">
                 <div class="content__top">
@@ -478,7 +272,7 @@
                     <div class="body__text">
                         <h3 class="text__title">Panasonic LUMIX FZ1000 II 20.1MP</h3>
                         <div class="text__desc">Large sensor 1 inch 20. 1MP MOS sensor provides excellent low light and color depth performance, making it perfect for wildlife, sports, new or candid shots</div>
-                        <div class="price">300</div>
+                        <div class="price">$300</div>
                         <button class="btn pay">Add to cart</button>
                         <button class="btn add-cart">Buy Now</button>
                     </div>
@@ -490,6 +284,5 @@
             </div>
         </div>
     </div>
-    <script src="./js/index.js"></script>
 </body>
 </html>
