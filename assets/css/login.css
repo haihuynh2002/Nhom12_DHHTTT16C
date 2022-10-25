@@ -52,6 +52,13 @@ html {
     background-color: var(--white-color);
 }
 
+[id*="warning"],
+[class*="warning"] {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: red;
+}
+
 @media (max-width: 800px) {
     .form__body-signup {
         max-width: 80%;

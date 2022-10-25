@@ -12,6 +12,7 @@
     <link rel="text/html" href="../css/icon/themify-icons/themify-icons.css">
     <link rel="text/html" href="../css/base.css">
     <link rel="stylesheet" href="../assets/css/login.css">
+    <script src="/js/jquery-3.6.1.min.js"></script>
     <title>Sigup</title>
 </head>
 <body>
@@ -22,11 +23,15 @@
 
         <label for="form__body__email" class="form__body__label">Username</label>
 
-        <input type="email" id="form__body__email" class="form__body__input">
+        <div id="username-warning"></div>
 
-        <label for="form__body__email" class="form__body__label">Full name</label>
+        <input type="text" id="form__body__email" class="form__body__input">
 
-        <input type="email" id="form__body__email" class="form__body__input">
+        <label for="form__body__name" class="form__body__label">Full name</label>
+
+        <div id="name-warning"></div>
+
+        <input type="name" id="form__body__name" class="form__body__input">
 
         <label for="form__body__email" class="form__body__label">Address</label>
 
@@ -37,17 +42,23 @@
             <label for="form__body__password" class="form__body__label">Password</label>
             
         </div>
+
+        <div id="password-warning"></div>
         
         <input type="password" id="form__body__password" class="form__body__input">
 
-        <label for="form__body__email" class="form__body__label">Retyping password</label>
+        <label for="form__body__retype" class="form__body__label">Retyping password</label>
 
-        <input type="password" id="form__body__email" class="form__body__input">
+        <div id="retype-warning"></div>
+
+        <input type="password" id="form__body__retype" class="form__body__input">
         
         <div class="form__checkbox">
             <input type="checkbox" name="checkbox" id="form__checkbox__input">
             <label for="form__checkbox__input" class="form__body__label">By checked this box, you content with our policy.</label>
         </div>
+
+        <div id="checkbox-warning"></div>
 
         <input type="submit" class="form__submit" value="Continue">
 
@@ -57,6 +68,6 @@
         </div>
     </div>
     </div>
-    <script src="../js/login.js"></script>
+    <script src="../js/signup.js"></script>
 </body>
 </html>

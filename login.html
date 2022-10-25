@@ -22,11 +22,15 @@
         <div class="form__body__title">Sign in to your account</div>
 
         <label for="form__body__email" class="form__body__label">Email</label>
+        
+        <div class="email-warning"></div>
 
         <input type="email" id="form__body__email" class="form__body__input">
 
         <div class="form__password">
             <label for="form__body__password" class="form__body__label">Password</label>
+
+            <span class="password-warning"></span>
 
             <a href="" class="form__forget-password">Forgot your password?</a>
 
@@ -39,7 +43,7 @@
             <label for="form__checkbox__input" class="form__body__label">Stay signed in for a week</label>
         </div>
 
-        <input type="submit" class="form__submit" value="Continue">
+        <input type="submit" class="form__submit" value="Continue" required>
 
         <div class="signup">
             <span class="signup__label">Don't have an account?</span>
