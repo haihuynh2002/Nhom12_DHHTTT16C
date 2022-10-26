@@ -19,7 +19,6 @@ const closeMenu = $('.menu-close');
 const menuList = $('.moblie-menu');
 const backToShop = $('.cart-return');
 const cartContainer = $('.cart-container');
-const addCart = $('.add-cart');
 const cartItem = $('.moblie-menu').children[3];
 
 
@@ -89,13 +88,6 @@ buyNowBtn.onclick = function() {
     cartModel.classList.add('open');
     cartContainer.classList.add('open-content');
 
-}
-
-addCart.onclick = function() {
-    modelBlock.classList.remove('open');
-    modelContent.classList.remove('open-content');
-    cartModel.classList.add('open');
-    cartContainer.classList.add('open-content');
 }
 
 cartItem.onclick = function() {

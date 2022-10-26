@@ -73,7 +73,7 @@ a {
     font-weight: 900;
     text-decoration: none;
 
-    color: var( --bs-blue);
+    color: var(--bs-blue);
 
     font-size: 3rem;
     font-weight: bold;
@@ -540,6 +540,7 @@ a {
 .item {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .item__heading {
@@ -708,7 +709,6 @@ a {
 }
 
 @media (max-width: 940px) {
-
     .cart-block {
         min-width: 320px;
         flex: 100%;
@@ -742,6 +742,10 @@ a {
 
     .col {
         width: 100%;
+    }
+
+    .col.card-col {
+        width: 50%;
     }
 
     .demo {
@@ -780,6 +784,15 @@ a {
 
 
 @media (max-width: 480px) {
+
+    .card {
+        flex: 0 0 100%;
+    }
+
+    .col.card-col {
+        width: 100%;
+    }
+
     .moblie-menu {
         padding: 10px;
     }
@@ -870,6 +883,59 @@ a {
 
 #about .demo__text-title {
     margin-bottom: 100px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+    
+.card__img {
+    width: 50%;
+    padding-top: 50%;
+    background: url(https://images.unsplash.com/photo-1666651304090-ee82c4c506a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80) no-repeat center / cover;
+    border-radius: 50%;
+    border: 5px solid var(--bs-blue);
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.card__name {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.card__major {
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+    margin-bottom: 50px;
+}
+
+.card__contact {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: 3px solid var(--bs-blue);
+    background-color: transparent;
+    border-radius: 999px;
+    margin-top: auto;
+    cursor: pointer;
+
 }
 
 .contrainer-fluid.about {
@@ -984,7 +1050,9 @@ textarea {
 
 .cart-list {
     list-style: none;
+    max-height: 80vh;
     padding: 0;
+    overflow-y: auto;
 }
 
 
@@ -996,7 +1064,6 @@ textarea {
     box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     border-radius: 5px;
     margin: 5px 0;
-
 }
 
 .cart-list__item > img {
